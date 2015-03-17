@@ -39,7 +39,6 @@ int main() {
 	calcCovarMatrix(samples, covar, mean, CV_COVAR_NORMAL | CV_COVAR_ROWS);
 	covar = covar / (samples.rows - 1);
 
-	std::cout << covar << std::endl;
 	std::cout << mean << std::endl;
 
 	Mat invCovar;
